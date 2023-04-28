@@ -11,7 +11,7 @@ export default function Home() {
 
   const draggableMarkup = (
     <Draggable>
-      <div className="p-5 bg-blue-500 text-white rounded-full">
+      <div className="p-5 bg-blue-400 text-white rounded-full">
         Drag me Somewhere
       </div>
     </Draggable>
