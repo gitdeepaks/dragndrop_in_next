@@ -1,4 +1,5 @@
 "use client";
+
 import DndProvider from "@/components/DndProvider";
 import Droppable from "@/components/Droppable";
 import Draggable from "@/components/Draggable";
