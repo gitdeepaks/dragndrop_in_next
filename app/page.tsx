@@ -30,7 +30,19 @@ export default function Home() {
       <DndProvider onDragEnd={handleDragEnd}>
         {parent === null ? draggableMarkup : null}
 
-        <div className="flex space-x-2">
+        <div className="grid grid-cols-3 gap-3 m-9 ">
+          {containers.map((id) => (
+            // We updated the Droppable component so it would accept an `id`
+            // prop and pass it to `useDroppable`
+            <Droppable key={id} id={id}>
+              <div>
+                <p>{id}</p>
+                {parent === id && draggableMarkup}
+              </div>
+            </Droppable>
+          ))}
+        </div>
+        <div className="flex space-x-5 p-10 order-5">
           {containers.map((id) => (
             // We updated the Droppable component so it would accept an `id`
             // prop and pass it to `useDroppable`
