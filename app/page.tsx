@@ -43,18 +43,6 @@ export default function Home() {
             </Droppable>
           ))}
         </div>
-        <div className="flex space-x-5 p-10 order-5">
-          {containers.map((id) => (
-            // We updated the Droppable component so it would accept an `id`
-            // prop and pass it to `useDroppable`
-            <Droppable key={id} id={id}>
-              <div>
-                <p>{id}</p>
-                {parent === id && draggableMarkup}
-              </div>
-            </Droppable>
-          ))}
-        </div>
       </DndProvider>
     </main>
   );
