@@ -20,7 +20,7 @@ function Droppable({ children, id }: Props) {
     <div
       ref={setNodeRef}
       style={style}
-      className={`${isOver ? "bg-green-100" : "bg-gray-200"} h-96 w-96 order-1`}
+      className={`${isOver ? "bg-green-200" : "bg-gray-200"} h-96 w-96 order-1`}
     >
       {children}
     </div>
